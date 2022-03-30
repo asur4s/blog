@@ -1,12 +1,3 @@
-"""
-author: Asura
-github: https://github.com/asur4s
-
-参考：
-https://github.com/dyboy2017/DYPROXY
-"""
-
-
 # SOCKS 用握手协议通知代理软件进行SOCKS连接，尽可能透明的转发。
 
 # VPN 是正向代理（翻墙）。正向代理需要手动设置代理的 IP 和端口。
@@ -172,7 +163,7 @@ class Proxy(socketserver.StreamRequestHandler):
                 break
             client = self.connection
             rs, ws, es = select.select([client, remote], [], [])
-            # 如果客户端发送数据
+            # 如果 Client 发送数据，则将数据发送给 Remote
             if client in rs:
                 data = client.recv(4096)
                 print("client data: {}".format(data))
@@ -180,7 +171,7 @@ class Proxy(socketserver.StreamRequestHandler):
                 l = remote.send(data)
                 if l<=0:
                     break
-            # 如果远程返回数据
+            # 如果 Remote 返回数据，则将数据发送给 Client
             if remote in rs:
                 data = remote.recv(4096)
                 l = client.send(data)
