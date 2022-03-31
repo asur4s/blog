@@ -1,3 +1,10 @@
+"""
+author: Asura
+References：
+- https://github.com/dyboy2017/DYPROXY
+"""
+
+
 # SOCKS 用握手协议通知代理软件进行SOCKS连接，尽可能透明的转发。
 
 # VPN 是正向代理（翻墙）。正向代理需要手动设置代理的 IP 和端口。
