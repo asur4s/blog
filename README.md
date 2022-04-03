@@ -5,6 +5,7 @@
 ## 2022
 
 **3月**
+- [【翻译】半小时快速了解 Rust](./doc/2.md)
 - [【代码】C# 实现简易 Tcp Proxy](./code/tcp-proxy.cs)
 - [【代码】C 实现简易 Tcp Proxy](./code/tcp-proxy.c)
 - [【代码】C 实现简易 Tcp Server](./code/tcp-server.c) & [Tcp Client](./code/tcp-client.c)
