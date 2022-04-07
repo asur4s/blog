@@ -5,7 +5,7 @@
 ## 2022
 
 **3月**
-- [【读书笔记】Rust 编程语言入门](./doc/3.md)
+- [【读书笔记】《Rust 编程语言入门》](./doc/3.md)
 - [【翻译】半小时快速了解 Rust](./doc/2.md)
 - [【代码】C# 实现简易 Tcp Proxy](./code/tcp-proxy.cs)
 - [【代码】C 实现简易 Tcp Proxy](./code/tcp-proxy.c)
