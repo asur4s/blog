@@ -4,7 +4,7 @@ use crate::proc_macro::TokenStream;
 use quote::quote;
 use syn;
 
-#[proc_macro_derive(HelloMacro)]
+#[proc_macro_derive(MacroName)]
 pub fn hello_macro_derive(input: TokenStream) -> TokenStream {
     // 将Rust代码转换为我们能够进行处理的语法树
     let ast = syn::parse(input).unwrap();

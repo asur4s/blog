@@ -1,7 +1,8 @@
 use hello_macro::HelloMacro;
-use hello_macro_derive::HelloMacro;
+use hello_macro_derive::MacroName;
 
-#[derive(HelloMacro)]
+// 标注 Macro 名称
+#[derive(MacroName)]
 struct Pancakes;
 
 fn main() {
